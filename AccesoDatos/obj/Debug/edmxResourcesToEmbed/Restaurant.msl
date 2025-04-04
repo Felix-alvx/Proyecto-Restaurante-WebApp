@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RsModelStoreContainer" CdmEntityContainer="RestauranteEntities">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="RsModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo_Electronico" ColumnName="Correo_Electronico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="RsModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="id_menu" ColumnName="id_menu" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mesa">
+      <EntityTypeMapping TypeName="RsModel.Mesa">
+        <MappingFragment StoreEntitySet="Mesa">
+          <ScalarProperty Name="id_mesa" ColumnName="id_mesa" />
+          <ScalarProperty Name="Numero_Mesa" ColumnName="Numero_Mesa" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservaciones">
+      <EntityTypeMapping TypeName="RsModel.Reservaciones">
+        <MappingFragment StoreEntitySet="Reservaciones">
+          <ScalarProperty Name="id_reservacion" ColumnName="id_reservacion" />
+          <ScalarProperty Name="ID_cliente" ColumnName="ID_cliente" />
+          <ScalarProperty Name="ID_mesa" ColumnName="ID_mesa" />
+          <ScalarProperty Name="ID_menu" ColumnName="ID_menu" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha_reservacion" ColumnName="Fecha_reservacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_ActualizarCliente" FunctionName="RsModel.Store.SP_ActualizarCliente" />
+    <FunctionImportMapping FunctionImportName="SP_ActualizarMenu" FunctionName="RsModel.Store.SP_ActualizarMenu" />
+    <FunctionImportMapping FunctionImportName="SP_ActualizarMesa" FunctionName="RsModel.Store.SP_ActualizarMesa" />
+    <FunctionImportMapping FunctionImportName="SP_ActualizarReservacion" FunctionName="RsModel.Store.SP_ActualizarReservacion" />
+    <FunctionImportMapping FunctionImportName="SP_ConsCliente" FunctionName="RsModel.Store.SP_ConsCliente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RsModel.SP_ConsCliente_Result">
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo_Electronico" ColumnName="Correo_Electronico" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ConsClienteXID" FunctionName="RsModel.Store.SP_ConsClienteXID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RsModel.SP_ConsClienteXID_Result">
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo_Electronico" ColumnName="Correo_Electronico" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ConsMenu" FunctionName="RsModel.Store.SP_ConsMenu">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RsModel.SP_ConsMenu_Result">
+          <ScalarProperty Name="id_menu" ColumnName="id_menu" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ConsMenuXID" FunctionName="RsModel.Store.SP_ConsMenuXID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RsModel.SP_ConsMenuXID_Result">
+          <ScalarProperty Name="id_menu" ColumnName="id_menu" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ConsMesa" FunctionName="RsModel.Store.SP_ConsMesa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RsModel.SP_ConsMesa_Result">
+          <ScalarProperty Name="id_mesa" ColumnName="id_mesa" />
+          <ScalarProperty Name="Numero_Mesa" ColumnName="Numero_Mesa" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ConsMesaXID" FunctionName="RsModel.Store.SP_ConsMesaXID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RsModel.SP_ConsMesaXID_Result">
+          <ScalarProperty Name="id_mesa" ColumnName="id_mesa" />
+          <ScalarProperty Name="Numero_Mesa" ColumnName="Numero_Mesa" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ConsReservacion" FunctionName="RsModel.Store.SP_ConsReservacion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RsModel.SP_ConsReservacion_Result">
+          <ScalarProperty Name="id_reservacion" ColumnName="id_reservacion" />
+          <ScalarProperty Name="ID_cliente" ColumnName="ID_cliente" />
+          <ScalarProperty Name="ID_mesa" ColumnName="ID_mesa" />
+          <ScalarProperty Name="ID_menu" ColumnName="ID_menu" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha_reservacion" ColumnName="Fecha_reservacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ConsReservacionXID" FunctionName="RsModel.Store.SP_ConsReservacionXID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RsModel.SP_ConsReservacionXID_Result">
+          <ScalarProperty Name="id_reservacion" ColumnName="id_reservacion" />
+          <ScalarProperty Name="ID_cliente" ColumnName="ID_cliente" />
+          <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+          <ScalarProperty Name="ID_mesa" ColumnName="ID_mesa" />
+          <ScalarProperty Name="DescripcionMesa" ColumnName="DescripcionMesa" />
+          <ScalarProperty Name="ID_menu" ColumnName="ID_menu" />
+          <ScalarProperty Name="DescripcionMenu" ColumnName="DescripcionMenu" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha_reservacion" ColumnName="Fecha_reservacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_EliminarCliente" FunctionName="RsModel.Store.SP_EliminarCliente" />
+    <FunctionImportMapping FunctionImportName="SP_EliminarMenu" FunctionName="RsModel.Store.SP_EliminarMenu" />
+    <FunctionImportMapping FunctionImportName="SP_EliminarMesa" FunctionName="RsModel.Store.SP_EliminarMesa" />
+    <FunctionImportMapping FunctionImportName="SP_EliminarReservacion" FunctionName="RsModel.Store.SP_EliminarReservacion" />
+    <FunctionImportMapping FunctionImportName="sp_InsertarCliente" FunctionName="RsModel.Store.sp_InsertarCliente" />
+    <FunctionImportMapping FunctionImportName="SP_InsertarMenu" FunctionName="RsModel.Store.SP_InsertarMenu" />
+    <FunctionImportMapping FunctionImportName="SP_InsertarMesa" FunctionName="RsModel.Store.SP_InsertarMesa" />
+    <FunctionImportMapping FunctionImportName="SP_InsertarReservacion" FunctionName="RsModel.Store.SP_InsertarReservacion" />
+  </EntityContainerMapping>
+</Mapping>

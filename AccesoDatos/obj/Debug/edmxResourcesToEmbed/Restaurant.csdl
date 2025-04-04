@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="id_Cliente" />
+    </Key>
+    <Property Name="id_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="90" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Correo_Electronico" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Reservaciones" Relationship="Self.FK__Reservaci__ID_cl__3E52440B" FromRole="Clientes" ToRole="Reservaciones" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="id_menu" />
+    </Key>
+    <Property Name="id_menu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Reservaciones" Relationship="Self.FK__Reservaci__ID_me__403A8C7D" FromRole="Menu" ToRole="Reservaciones" />
+  </EntityType>
+  <EntityType Name="Mesa">
+    <Key>
+      <PropertyRef Name="id_mesa" />
+    </Key>
+    <Property Name="id_mesa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Numero_Mesa" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Reservaciones" Relationship="Self.FK__Reservaci__ID_me__3F466844" FromRole="Mesa" ToRole="Reservaciones" />
+  </EntityType>
+  <EntityType Name="Reservaciones">
+    <Key>
+      <PropertyRef Name="id_reservacion" />
+    </Key>
+    <Property Name="id_reservacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_cliente" Type="Int32" />
+    <Property Name="ID_mesa" Type="Int32" />
+    <Property Name="ID_menu" Type="Int32" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Fecha_reservacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Clientes" Relationship="Self.FK__Reservaci__ID_cl__3E52440B" FromRole="Reservaciones" ToRole="Clientes" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK__Reservaci__ID_me__403A8C7D" FromRole="Reservaciones" ToRole="Menu" />
+    <NavigationProperty Name="Mesa" Relationship="Self.FK__Reservaci__ID_me__3F466844" FromRole="Reservaciones" ToRole="Mesa" />
+  </EntityType>
+  <Association Name="FK__Reservaci__ID_cl__3E52440B">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+    <End Role="Reservaciones" Type="Self.Reservaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="id_Cliente" />
+      </Principal>
+      <Dependent Role="Reservaciones">
+        <PropertyRef Name="ID_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reservaci__ID_me__403A8C7D">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="0..1" />
+    <End Role="Reservaciones" Type="Self.Reservaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="id_menu" />
+      </Principal>
+      <Dependent Role="Reservaciones">
+        <PropertyRef Name="ID_menu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reservaci__ID_me__3F466844">
+    <End Role="Mesa" Type="Self.Mesa" Multiplicity="0..1" />
+    <End Role="Reservaciones" Type="Self.Reservaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mesa">
+        <PropertyRef Name="id_mesa" />
+      </Principal>
+      <Dependent Role="Reservaciones">
+        <PropertyRef Name="ID_mesa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RestauranteEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" />
+    <EntitySet Name="Mesa" EntityType="Self.Mesa" />
+    <EntitySet Name="Reservaciones" EntityType="Self.Reservaciones" />
+    <AssociationSet Name="FK__Reservaci__ID_cl__3E52440B" Association="Self.FK__Reservaci__ID_cl__3E52440B">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Reservaciones" EntitySet="Reservaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reservaci__ID_me__403A8C7D" Association="Self.FK__Reservaci__ID_me__403A8C7D">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="Reservaciones" EntitySet="Reservaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reservaci__ID_me__3F466844" Association="Self.FK__Reservaci__ID_me__3F466844">
+      <End Role="Mesa" EntitySet="Mesa" />
+      <End Role="Reservaciones" EntitySet="Reservaciones" />
+    </AssociationSet>
+    <FunctionImport Name="SP_ActualizarCliente">
+      <Parameter Name="id_cliente" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Apellidos" Mode="In" Type="String" />
+      <Parameter Name="Telefono" Mode="In" Type="String" />
+      <Parameter Name="Correo_Electronico" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ActualizarMenu">
+      <Parameter Name="id_menu" Mode="In" Type="Int32" />
+      <Parameter Name="Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ActualizarMesa">
+      <Parameter Name="id_mesa" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Mesa" Mode="In" Type="Int32" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ActualizarReservacion">
+      <Parameter Name="id_reservacion" Mode="In" Type="Int32" />
+      <Parameter Name="ID_cliente" Mode="In" Type="Int32" />
+      <Parameter Name="ID_mesa" Mode="In" Type="Int32" />
+      <Parameter Name="ID_menu" Mode="In" Type="Int32" />
+      <Parameter Name="Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="Fecha_reservacion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ConsCliente" ReturnType="Collection(RsModel.SP_ConsCliente_Result)" />
+    <FunctionImport Name="SP_ConsClienteXID" ReturnType="Collection(RsModel.SP_ConsClienteXID_Result)">
+      <Parameter Name="id_Cliente" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ConsMenu" ReturnType="Collection(RsModel.SP_ConsMenu_Result)" />
+    <FunctionImport Name="SP_ConsMenuXID" ReturnType="Collection(RsModel.SP_ConsMenuXID_Result)">
+      <Parameter Name="id_menu" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ConsMesa" ReturnType="Collection(RsModel.SP_ConsMesa_Result)" />
+    <FunctionImport Name="SP_ConsMesaXID" ReturnType="Collection(RsModel.SP_ConsMesaXID_Result)">
+      <Parameter Name="id_mesa" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ConsReservacion" ReturnType="Collection(RsModel.SP_ConsReservacion_Result)" />
+    <FunctionImport Name="SP_ConsReservacionXID" ReturnType="Collection(RsModel.SP_ConsReservacionXID_Result)">
+      <Parameter Name="id_reservacion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_EliminarCliente">
+      <Parameter Name="id_cliente" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_EliminarMenu">
+      <Parameter Name="id_menu" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_EliminarMesa">
+      <Parameter Name="id_mesa" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_EliminarReservacion">
+      <Parameter Name="id_reservacion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_InsertarCliente">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="Apellidos" Mode="In" Type="String" />
+      <Parameter Name="Telefono" Mode="In" Type="String" />
+      <Parameter Name="Correo_Electronico" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertarMenu">
+      <Parameter Name="Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertarMesa">
+      <Parameter Name="Numero_Mesa" Mode="In" Type="Int32" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertarReservacion">
+      <Parameter Name="ID_cliente" Mode="In" Type="Int32" />
+      <Parameter Name="ID_mesa" Mode="In" Type="Int32" />
+      <Parameter Name="ID_menu" Mode="In" Type="Int32" />
+      <Parameter Name="Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="Fecha_reservacion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_ConsCliente_Result">
+    <Property Type="Int32" Name="id_Cliente" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="90" />
+    <Property Type="String" Name="Telefono" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Correo_Electronico" Nullable="true" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="SP_ConsClienteXID_Result">
+    <Property Type="Int32" Name="id_Cliente" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="90" />
+    <Property Type="String" Name="Telefono" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Correo_Electronico" Nullable="true" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="SP_ConsMenu_Result">
+    <Property Type="Int32" Name="id_menu" Nullable="false" />
+    <Property Type="Decimal" Name="Precio" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_ConsMenuXID_Result">
+    <Property Type="Int32" Name="id_menu" Nullable="false" />
+    <Property Type="Decimal" Name="Precio" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_ConsMesa_Result">
+    <Property Type="Int32" Name="id_mesa" Nullable="false" />
+    <Property Type="Int32" Name="Numero_Mesa" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_ConsMesaXID_Result">
+    <Property Type="Int32" Name="id_mesa" Nullable="false" />
+    <Property Type="Int32" Name="Numero_Mesa" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_ConsReservacion_Result">
+    <Property Type="Int32" Name="id_reservacion" Nullable="false" />
+    <Property Type="Int32" Name="ID_cliente" Nullable="true" />
+    <Property Type="Int32" Name="ID_mesa" Nullable="true" />
+    <Property Type="Int32" Name="ID_menu" Nullable="true" />
+    <Property Type="Int32" Name="Cantidad" Nullable="true" />
+    <Property Type="DateTime" Name="Fecha_reservacion" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="SP_ConsReservacionXID_Result">
+    <Property Type="Int32" Name="id_reservacion" Nullable="false" />
+    <Property Type="Int32" Name="ID_cliente" Nullable="true" />
+    <Property Type="String" Name="NombreCliente" Nullable="false" MaxLength="60" />
+    <Property Type="Int32" Name="ID_mesa" Nullable="true" />
+    <Property Type="String" Name="DescripcionMesa" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="ID_menu" Nullable="true" />
+    <Property Type="String" Name="DescripcionMenu" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="Cantidad" Nullable="true" />
+    <Property Type="DateTime" Name="Fecha_reservacion" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

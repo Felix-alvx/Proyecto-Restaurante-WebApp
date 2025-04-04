@@ -1,0 +1,58 @@
+﻿@model IEnumerable<RestauranteWebApp.Models.M_Cliente>
+
+@{
+    ViewBag.Title = "ListaClientes";
+}
+
+<h2>ListaClientes</h2>
+
+<p>
+    @Html.ActionLink("Agregar Cliente", "AgregarClientes")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_Cliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Correo_Electronico)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_Cliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo_Electronico)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "ModificarCliente", new { id = item.id_Cliente }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Eliminar", "EliminarCliente", new { id = item.id_Cliente })
+            </td>
+        </tr>
+    }
+
+</table>

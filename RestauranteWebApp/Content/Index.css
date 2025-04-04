@@ -1,0 +1,33 @@
+﻿body {
+    background-image: url('/Imagenes/imagen8.jpg'); /* Si es una imagen */
+    background-size: cover; /* Para asegurar que cubra toda la pantalla */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat;
+}
+
+.menu-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Negro con 60% de opacidad */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+    .menu-container h2 {
+        color: #FFD700; /* Dorado */
+    }
+
+    .menu-container p {
+        color: #FFFFFF; /* Blanco */
+    }
+
+
+.background-box {
+    background-color: rgba(0, 0, 0, 0.75); /* Negro con 75% de opacidad */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+img {
+    margin-bottom: 15px;
+    border-radius: 8px; /* Para hacer las esquinas más suaves */
+}

@@ -1,0 +1,419 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\views\\menu\\agregarmenus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\menu\\agregarmenus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\restaurantewebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\views\\cliente\\modificarcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\cliente\\modificarcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\views\\cliente\\listaclientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\cliente\\listaclientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\views\\cliente\\eliminarcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\cliente\\eliminarcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\views\\cliente\\agregarclientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\views\\cliente\\agregarclientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\restaurantewebapp\\models\\m_reservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\models\\m_reservaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\models\\m_mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\models\\m_mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\models\\m_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\models\\m_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\restaurantewebapp\\models\\m_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\models\\m_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\restaurantewebapp\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4F114F-E41E-4E9F-AE2D-320C751A50EE}|RestauranteWebApp\\RestauranteWebApp.csproj|solutionrelative:restaurantewebapp\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\logicanegocio\\interfaces\\ireservacionln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\interfaces\\ireservacionln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\logicanegocio\\interfaces\\imesaln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\interfaces\\imesaln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\logicanegocio\\interfaces\\imenuln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\interfaces\\imenuln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\logicanegocio\\interfaces\\iclientesln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\interfaces\\iclientesln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\logicanegocio\\implementaciones\\reservacionln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\implementaciones\\reservacionln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\logicanegocio\\implementaciones\\mesaln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\implementaciones\\mesaln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\logicanegocio\\implementaciones\\menuln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\implementaciones\\menuln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\logicanegocio\\implementaciones\\clienteln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73B1E2D5-C6DE-4E2F-AB72-6E020EC0EDDA}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\implementaciones\\clienteln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DD465F-5201-45E1-BE5D-8B72A5506349}|AccesoDatos\\AccesoDatos.csproj|c:\\users\\crist\\onedrive\\documentos\\gabriel\\universidad\\programacion iii\\proyecto final\\proyecto restaurante\\restaurante_web\\accesodatos\\interfaz\\ireservacionad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36DD465F-5201-45E1-BE5D-8B72A5506349}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\interfaz\\ireservacionad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T23:37:10.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AgregarMenus.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Menu\\AgregarMenus.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Menu\\AgregarMenus.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Menu\\AgregarMenus.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Menu\\AgregarMenus.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T23:37:04.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T23:36:54.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T23:36:50.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModificarCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Cliente\\ModificarCliente.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Cliente\\ModificarCliente.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Cliente\\ModificarCliente.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Cliente\\ModificarCliente.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T23:36:29.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListaClientes.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Cliente\\ListaClientes.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Cliente\\ListaClientes.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Cliente\\ListaClientes.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Cliente\\ListaClientes.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T23:36:22.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EliminarCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Cliente\\EliminarCliente.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Cliente\\EliminarCliente.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Cliente\\EliminarCliente.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Cliente\\EliminarCliente.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T23:36:14.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AgregarClientes.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Cliente\\AgregarClientes.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Cliente\\AgregarClientes.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Cliente\\AgregarClientes.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Cliente\\AgregarClientes.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T23:35:53.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "M_Mesa.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Models\\M_Mesa.cs",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Models\\M_Mesa.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Models\\M_Mesa.cs",
+              "RelativeToolTip": "RestauranteWebApp\\Models\\M_Mesa.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:34:45.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "M_Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Models\\M_Menu.cs",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Models\\M_Menu.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Models\\M_Menu.cs",
+              "RelativeToolTip": "RestauranteWebApp\\Models\\M_Menu.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:34:38.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RestauranteWebApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T22:15:31.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "M_Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Models\\M_Cliente.cs",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Models\\M_Cliente.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Models\\M_Cliente.cs",
+              "RelativeToolTip": "RestauranteWebApp\\Models\\M_Cliente.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:34:20.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "RestauranteWebApp\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAAwFMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T21:01:51.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IReservacionLN.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Interfaces\\IReservacionLN.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\Interfaces\\IReservacionLN.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Interfaces\\IReservacionLN.cs",
+              "RelativeToolTip": "LogicaNegocio\\Interfaces\\IReservacionLN.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:32:16.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IMesaLN.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Interfaces\\IMesaLN.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\Interfaces\\IMesaLN.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Interfaces\\IMesaLN.cs",
+              "RelativeToolTip": "LogicaNegocio\\Interfaces\\IMesaLN.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:32:14.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IMenuLN.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Interfaces\\IMenuLN.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\Interfaces\\IMenuLN.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Interfaces\\IMenuLN.cs",
+              "RelativeToolTip": "LogicaNegocio\\Interfaces\\IMenuLN.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:32:13.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "M_Reservaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Models\\M_Reservaciones.cs",
+              "RelativeDocumentMoniker": "RestauranteWebApp\\Models\\M_Reservaciones.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\RestauranteWebApp\\Models\\M_Reservaciones.cs",
+              "RelativeToolTip": "RestauranteWebApp\\Models\\M_Reservaciones.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvx4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T20:55:45.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IClientesLN.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Interfaces\\IClientesLN.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\Interfaces\\IClientesLN.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Interfaces\\IClientesLN.cs",
+              "RelativeToolTip": "LogicaNegocio\\Interfaces\\IClientesLN.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T21:21:30.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReservacionLN.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Implementaciones\\ReservacionLN.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\Implementaciones\\ReservacionLN.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Implementaciones\\ReservacionLN.cs",
+              "RelativeToolTip": "LogicaNegocio\\Implementaciones\\ReservacionLN.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:31:56.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MesaLN.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Implementaciones\\MesaLN.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\Implementaciones\\MesaLN.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Implementaciones\\MesaLN.cs",
+              "RelativeToolTip": "LogicaNegocio\\Implementaciones\\MesaLN.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T21:20:04.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MenuLN.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Implementaciones\\MenuLN.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\Implementaciones\\MenuLN.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Implementaciones\\MenuLN.cs",
+              "RelativeToolTip": "LogicaNegocio\\Implementaciones\\MenuLN.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwCMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T21:19:56.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ClienteLN.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Implementaciones\\ClienteLN.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\Implementaciones\\ClienteLN.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\LogicaNegocio\\Implementaciones\\ClienteLN.cs",
+              "RelativeToolTip": "LogicaNegocio\\Implementaciones\\ClienteLN.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwCUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:30:31.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IReservacionAD.cs",
+              "DocumentMoniker": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\AccesoDatos\\Interfaz\\IReservacionAD.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\Interfaz\\IReservacionAD.cs",
+              "ToolTip": "C:\\Users\\Crist\\OneDrive\\Documentos\\Gabriel\\UNIVERSIDAD\\Programacion III\\Proyecto Final\\Proyecto Restaurante\\Restaurante_Web\\AccesoDatos\\Interfaz\\IReservacionAD.cs",
+              "RelativeToolTip": "AccesoDatos\\Interfaz\\IReservacionAD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T23:30:19.854Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

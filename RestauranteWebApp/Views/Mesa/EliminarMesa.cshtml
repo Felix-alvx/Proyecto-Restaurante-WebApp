@@ -1,0 +1,57 @@
+﻿@model RestauranteWebApp.Models.M_Mesa
+
+@{
+    ViewBag.Title = "EliminarMesa";
+}
+
+<h2>EliminarMesa</h2>
+
+<h3>Estás seguro que deseas eliminar esto?</h3>
+<div>
+    <h4>Mesa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id_mesa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_mesa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Mesa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Mesa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("Acciones", "Mesa", FormMethod.Post, new { enctype = "multipart/form-data", @id = "frmMesas" }))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(w => w.id_mesa, new { @id = "hdnId" })
+        @Html.HiddenFor(w => w.Numero_Mesa, new { @id = "hdnId" })
+        @Html.HiddenFor(w => w.Descripcion, new { @id = "hdnId" })
+
+        <div class="form-actions no-color">
+            <button type="submit" id="btnEliminar" name="submitButton" value="Eliminar" class="btn btn-primary" title="Eliminar" data-toggle="tooltip" data-container="body"
+                    data-placement="right">
+                Eliminar
+            </button>
+
+        </div>
+        @Html.ActionLink("Regresar", "ListaMesa")
+    }
+</div>

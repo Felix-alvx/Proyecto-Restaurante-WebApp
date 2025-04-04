@@ -1,0 +1,46 @@
+﻿@model IEnumerable<RestauranteWebApp.Models.M_Mesa>
+
+@{
+    ViewBag.Title = "ListaMesa";
+}
+
+<h2>ListaMesa</h2>
+
+<p>
+    @Html.ActionLink("Agregar Mesa", "AgregarMesas")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_mesa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Numero_Mesa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_mesa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero_Mesa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "ModificarMesa", new { id = item.id_mesa }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Eliminar", "EliminarMesa", new { id = item.id_mesa })
+            </td>
+        </tr>
+    }
+
+</table>

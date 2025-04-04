@@ -1,0 +1,125 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #352929;
+    background-image: url('/Imagenes/imagen12.jpg'); /* Si es una imagen */
+    background-size: cover; /* Para asegurar que cubra toda la pantalla */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+    .heading h1 {
+        font-size: 50px;
+        color: black;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    .heading p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 35px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-imagen {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+    .about-imagen img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+
+    .about-imagen:hover img {
+        transform: scale(1.2);
+    }
+
+.about-content {
+    flex: 1;
+}
+
+    .about-content h2 {
+        font-size: 23px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .about-content p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+        background-color: rgba(108, 39, 39, 0.7);
+        padding: 5px;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+@media screen and (max-width: 768px) {
+    .heading {
+        padding: 0px 20px;
+    }
+
+        .heading h1 {
+            font-size: 36px;
+        }
+
+        .heading p {
+            font-size: 17px;
+            margin-bottom: 0px;
+        }
+
+    .container {
+        padding: 0px;
+    }
+
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-imagen {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        padding: 0px;
+        font-size: 16px;
+    }
+}

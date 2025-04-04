@@ -1,0 +1,75 @@
+﻿@model RestauranteWebApp.Models.M_Cliente
+
+@{
+    ViewBag.Title = "EliminarCliente";
+}
+
+<h2>EliminarCliente</h2>
+
+<h3>Estás seguro que deseas eliminar el cliente?</h3>
+<div>
+    <h4>Clientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id_Cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_Cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Correo_Electronico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Correo_Electronico)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("Acciones", "Cliente", FormMethod.Post, new { enctype = "multipart/form-data", @id = "frmClientes" }))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(w => w.id_Cliente, new { @id = "hdnId" })
+        @Html.HiddenFor(w => w.Nombre, new { @id = "hdnId" })
+        @Html.HiddenFor(w => w.Apellidos, new { @id = "hdnId" })
+        @Html.HiddenFor(w => w.Telefono, new { @id = "hdnId" })
+        @Html.HiddenFor(w => w.Correo_Electronico, new { @id = "hdnId" })
+
+        <div class="form-actions no-color">
+            <button type="submit" id="btnEliminar" name="submitButton" value="Eliminar" class="btn btn-primary" title="Eliminar" data-toggle="tooltip" data-container="body"
+                    data-placement="right">
+                Eliminar
+            </button>
+
+        </div>
+        @Html.ActionLink("Regresar", "ListaClientes")
+    }
+</div>

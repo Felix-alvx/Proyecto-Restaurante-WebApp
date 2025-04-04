@@ -1,0 +1,61 @@
+﻿@model RestauranteWebApp.Models.M_Menu
+
+@{
+    ViewBag.Title = "AgregarMenus";
+}
+
+<h2>Agregar Menú</h2>
+
+
+@using (Html.BeginForm("Acciones", "Menu", FormMethod.Post, new { enctype = "multipart/form-data", @id = "frmMenus" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Menú</h4>
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(model => model.id_menu, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.id_menu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.id_menu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Precio, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Precio, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Precio, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" id="btnAgregar" name="submitButton" value="Agregar" class="btn btn-primary"
+                        title="Agregar" data-toggle="tooltip" data-container="body"
+                        data-placement="right">
+                    Agregar
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Regresar", "ListaMenu")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
